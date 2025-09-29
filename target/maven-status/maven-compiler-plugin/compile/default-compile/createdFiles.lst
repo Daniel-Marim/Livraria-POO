@@ -8,9 +8,11 @@ com\mycompany\livraria\repository\LivroRepository.class
 com\mycompany\livraria\view\Cliente\Cadastro$4.class
 com\mycompany\livraria\controller\LivroController.class
 com\mycompany\livraria\view\Cliente\Cadastro$2.class
+com\mycompany\livraria\view\Cliente\Login$3.class
 com\mycompany\livraria\view\Cliente\Cadastro$1.class
 com\mycompany\livraria\view\Cliente\Cadastro$8.class
 com\mycompany\livraria\view\Cliente\Login$1.class
 com\mycompany\livraria\view\Cliente\Cadastro$3.class
+com\mycompany\livraria\view\Cliente\Login$2.class
 com\mycompany\livraria\model\Livro.class
 com\mycompany\livraria\view\Cliente\Cadastro$7.class

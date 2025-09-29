@@ -13,8 +13,11 @@ public class Login extends javax.swing.JFrame {
     /**
      * Creates new form LoginCliente
      */
-    public Login() {
+    public Login() {          
+        setTitle("Entrar");
         initComponents();
+        this.setLocationRelativeTo(null);
+
     }
 
     /**

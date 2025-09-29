@@ -2,7 +2,6 @@
 package com.mycompany.livraria;
 
 import com.formdev.flatlaf.FlatLightLaf; 
-import com.mycompany.livraria.view.Cliente.Cadastro;
 import com.mycompany.livraria.view.Cliente.Login; 
 import java.awt.EventQueue;
 
@@ -18,7 +17,7 @@ public class Livraria {
         EventQueue.invokeLater(new Runnable() {
             @Override
             public void run() {
-                new Cadastro().setVisible(true);
+                new Login().setVisible(true);
             }
         });
     }
