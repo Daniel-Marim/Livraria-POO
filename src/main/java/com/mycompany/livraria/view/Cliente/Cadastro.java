@@ -100,7 +100,7 @@ public class Cadastro extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
+        jButton1.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
         jButton1.setText("Cadastrar");
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -109,7 +109,7 @@ public class Cadastro extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
+        jButton2.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
         jButton2.setText("Cancelar");
         jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
