@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package com.mycompany.livraria.view.Cliente;
-
 /**
  *
  * @author mathe
@@ -15,7 +14,6 @@ public class Cadastro extends javax.swing.JFrame {
      */
     public Cadastro() {
         setTitle("Cadastrar Cliente");
-
         initComponents();
         this.setLocationRelativeTo(null);
 
@@ -30,32 +28,199 @@ public class Cadastro extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        TipoPessoa = new javax.swing.ButtonGroup();
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        enderecoInput = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        usuarioInput = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
+        senhaInput = new javax.swing.JPasswordField();
+        pessoaFisica = new javax.swing.JRadioButton();
+        pessoaJurifica = new javax.swing.JRadioButton();
+        senhaInput1 = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        enderecoInput1 = new javax.swing.JTextField();
+        jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setFont(new java.awt.Font("Yu Gothic Medium", 0, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Verdana", 1, 36)); // NOI18N
         jLabel1.setText("Cadastre-se");
+
+        jLabel2.setFont(new java.awt.Font("Verdana", 0, 24)); // NOI18N
+        jLabel2.setText("Usuario");
+
+        enderecoInput.setFont(new java.awt.Font("Verdana", 0, 24)); // NOI18N
+        enderecoInput.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                enderecoInputActionPerformed(evt);
+            }
+        });
+
+        jLabel5.setFont(new java.awt.Font("Verdana", 0, 24)); // NOI18N
+        jLabel5.setText("Senha");
+
+        usuarioInput.setFont(new java.awt.Font("Verdana", 0, 24)); // NOI18N
+        usuarioInput.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                usuarioInputActionPerformed(evt);
+            }
+        });
+
+        jLabel6.setFont(new java.awt.Font("Verdana", 0, 24)); // NOI18N
+        jLabel6.setText("Endereço");
+
+        senhaInput.setFont(new java.awt.Font("Verdana", 0, 24)); // NOI18N
+        senhaInput.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        senhaInput.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                senhaInputActionPerformed(evt);
+            }
+        });
+
+        TipoPessoa.add(pessoaFisica);
+        pessoaFisica.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
+        pessoaFisica.setText("Pessoa Física");
+
+        TipoPessoa.add(pessoaJurifica);
+        pessoaJurifica.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
+        pessoaJurifica.setText("Pessoa Juridica");
+        pessoaJurifica.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                pessoaJurificaActionPerformed(evt);
+            }
+        });
+
+        senhaInput1.setFont(new java.awt.Font("Verdana", 0, 24)); // NOI18N
+        senhaInput1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                senhaInput1ActionPerformed(evt);
+            }
+        });
+
+        jButton1.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
+        jButton1.setText("Cadastrar");
+        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        jButton2.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
+        jButton2.setText("Cancelar");
+        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        enderecoInput1.setFont(new java.awt.Font("Verdana", 0, 24)); // NOI18N
+        enderecoInput1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                enderecoInput1ActionPerformed(evt);
+            }
+        });
+
+        jLabel7.setFont(new java.awt.Font("Verdana", 0, 24)); // NOI18N
+        jLabel7.setText("Telefone");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(279, 279, 279)
+                        .addComponent(jLabel1))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(50, 50, 50)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel2)
+                            .addComponent(usuarioInput, javax.swing.GroupLayout.PREFERRED_SIZE, 700, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel5)
+                            .addComponent(enderecoInput, javax.swing.GroupLayout.PREFERRED_SIZE, 700, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel6)
+                            .addComponent(senhaInput, javax.swing.GroupLayout.PREFERRED_SIZE, 700, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(pessoaFisica)
+                                .addGap(18, 18, 18)
+                                .addComponent(pessoaJurifica))
+                            .addComponent(senhaInput1, javax.swing.GroupLayout.PREFERRED_SIZE, 700, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(enderecoInput1, javax.swing.GroupLayout.PREFERRED_SIZE, 700, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel7))))
+                .addContainerGap(50, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(313, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(304, 304, 304))
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jButton2)
+                .addGap(29, 29, 29)
+                .addComponent(jButton1)
+                .addGap(50, 50, 50))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(21, 21, 21)
+                .addGap(15, 15, 15)
                 .addComponent(jLabel1)
-                .addContainerGap(527, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(usuarioInput, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(enderecoInput, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel7)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(enderecoInput1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(11, 11, 11)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(pessoaFisica)
+                    .addComponent(pessoaJurifica))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(senhaInput1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(senhaInput, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 58, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(42, 42, 42))
         );
+
+        pessoaJurifica.getAccessibleContext().setAccessibleName("");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void enderecoInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_enderecoInputActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_enderecoInputActionPerformed
+
+    private void usuarioInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usuarioInputActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_usuarioInputActionPerformed
+
+    private void pessoaJurificaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pessoaJurificaActionPerformed
+    }//GEN-LAST:event_pessoaJurificaActionPerformed
+
+    private void senhaInput1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_senhaInput1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_senhaInput1ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void enderecoInput1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_enderecoInput1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_enderecoInput1ActionPerformed
+
+    private void senhaInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_senhaInputActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_senhaInputActionPerformed
 
     /**
      * @param args the command line arguments
@@ -91,12 +256,27 @@ public class Cadastro extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Cadastro().setVisible(true);
-               
+
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.ButtonGroup TipoPessoa;
+    private javax.swing.JTextField enderecoInput;
+    private javax.swing.JTextField enderecoInput1;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JRadioButton pessoaFisica;
+    private javax.swing.JRadioButton pessoaJurifica;
+    private javax.swing.JTextField senhaInput;
+    private javax.swing.JTextField senhaInput1;
+    private javax.swing.JTextField usuarioInput;
     // End of variables declaration//GEN-END:variables
+
 }
