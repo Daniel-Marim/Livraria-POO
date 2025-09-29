@@ -1,3 +1,9 @@
+com\mycompany\livraria\Livraria$1.class
+com\mycompany\livraria\view\Cliente\CadastroCliente$1.class
+com\mycompany\livraria\view\Cliente\CadastroCliente.class
+com\mycompany\livraria\view\Cliente\LoginCliente.class
 com\mycompany\livraria\Livraria.class
-com\mycompany\livraria\model\Livro.class
+com\mycompany\livraria\view\Cliente\LoginCliente$1.class
 com\mycompany\livraria\repository\LivroRepository.class
+com\mycompany\livraria\controller\LivroController.class
+com\mycompany\livraria\model\Livro.class
